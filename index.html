@@ -9,19 +9,24 @@
 <body>
     <header>
         <img src="img/img.jpg" alt="AtlantiGo Logo" class="header-img">
+        <h1 class="app-title">AtlantiGo</h1>
     </header>
 
     <main>
         <div class="form-container">
-            <h1>Commencez à gagner des prix</h1>
+            <h2>Commencez à gagner des prix</h2>
             <p class="slogan">Bougez plus, travaillez mieux, vivez mieux</p>
 
             <form id="register-form" action="https://formspree.io/f/xdkeokdr" method="POST">
                 <input type="email" id="email" name="email" placeholder="Entrez votre e-mail" required>
+                <div class="error-message" id="email-error"></div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">J'accepte le traitement de mon e-mail à des fins éducatives uniquement</label>
+                </div>
+                <div class="error-message" id="terms-error"></div>
                 <button type="submit">Inscrivez-vous maintenant</button>
             </form>
-            <p id="confirmation-message"></p>
-            <p>Nombre de participants : <span id="participants-count">0</span></p>
         </div>
     </main>
 
